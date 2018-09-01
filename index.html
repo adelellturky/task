@@ -1,0 +1,54 @@
+<html>
+    
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/all.min.css"/>
+        <link rel="stylesheet" href="index.style.css"/>
+    </head>
+    
+    <body>
+        <div class="container py-5">
+            <h2>PhoneBOOK
+                <button id="btntoggle" onclick="togglform()" class="btn btn-warning btn-sm">show <i class="fas fa-arrow-alt-circle-up"></i>
+                </button>
+            </h2>
+        
+        
+        <div id="form-container">
+            <div class="form-group">
+                <label>username: </label>
+                <input id="uname" type="text" class="form-control"/>
+            </div>
+         <div class="form-group">
+                <label>userphone: </label>
+                <input id="uphone" type="text" class="form-control"/>
+            </div> 
+          <div class="form-group">
+                <label>email: </label>
+                <input id="umail" type="text" class="form-control"/>
+            </div>
+          <div class="form-group">
+                <label>location: </label>
+                <input id="ulocation" type="text" class="form-control"/>
+            </div>
+            <button  onclick="addRecord()" class="btn btn-info float-right">add</button>
+            <div class="clearfix"></div>
+        </div>
+            <table class="table table-striped text-center my-3">
+                <thead>
+                    <th>Name:</th>
+                    <th>Phone:</th>
+                    <th>Mail:</th>
+                    <th>location:</th>
+                </thead>
+                <tbody id="result">
+                
+                </tbody>
+            </table>
+            
+            </div>
+        
+    
+    <script src="mine.js"></script>
+    </body>
+</html>
