@@ -50,5 +50,76 @@
         
     
     <script src="mine.js"></script>
+        
+        
+        
+        <div class="container py-5">
+        
+        <h2>phone Book
+            
+        <button id="btnToggle" onclick="toggleForm()" class="btn btn-warning btn-sm">hide</button>    
+        </h2>
+        
+        
+<div id="form-container">            
+  
+    
+        <div class="form-group">
+            <label>username :</label>
+            <input id="uname" type="text" class="form-control"/>
+    </div>  
+    
+    
+    
+        <div class="form-group">
+            <label>phone :</label>
+            <input id="uphone" type="text" class="form-control"/>
+    </div>  
+    
+    
+        <div class="form-group">
+            <label>mail :</label>
+            <input id="umail" type="text" class="form-control"/>
+    </div>  
+    
+    
+        <div class="form-group">
+            <label>location :</label>
+            <input id="ulocation" type="text" class="form-control"/>
+    </div>  
+          
+    <button onclick="addRecord()"  class="btn btn-info btn-sm float-right">add</button>
+            
+        
+</div> 
+                
+            <table class="table table-striped text-center">
+            
+                <thead>
+                
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Mail</th>
+                    <th>Location</th>
+                
+                </thead>
+            
+        
+                <tbody id="result">
+                
+                    
+                </tbody>
+            
+            
+            </table>
+            
+        </div>
+            
+            
+        
+        
+        <script src="mine.js"></script>
+    
     </body>
+    
 </html>
